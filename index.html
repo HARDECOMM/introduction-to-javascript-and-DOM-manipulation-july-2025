@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">>
+</head>
+    <body>
+        <!--Question 1-->
+        <h2>Datatypes, variable and conditional statements</h2>
+        <p id="hd">This is js building blocks to illustrate how var, logical and datatype interact</p>
+        <input id="userName" type="text" placeholder="Write your full name...">
+        <input id="age" type="number" placeholder="Enter your age...">
+        <button onclick="let yourName = document.getElementById('userName').value; let yourAge = parseInt(document.getElementById('age').value); document.getElementById('hd').textContent = 'Hello! My name is ' + yourName + ', and I am ' + yourAge + ' years old.'; if (yourAge >= 18) { console.log('Yes, you can vote!'); document.getElementById('voteResult').textContent = 'Yes, you can vote!'; } else { console.log('No, you cannot vote.'); document.getElementById('voteResult').textContent = 'No, you cannot vote.'; }" id="votingAge">Can I vote?</button>
+        <p id="voteResult"></p>
+    <div>
+        <!-- Question 2 -->
+        <h2>Reusable Functions</h2>
+        <p>These functions share input fields to demonstrate reusability.</p>
+        <input id="sharedName" type="text" placeholder="Enter your name">
+        <input id="sharedAge" type="number" placeholder="Enter your age">
+        <input id="sharedPrice" type="number" placeholder="Enter price">
+        <input id="sharedQuantity" type="number" placeholder="Enter quantity">
+
+        <button onclick="processAll()">Process All</button>
+        <p id="greetResult"></p>
+        <p id="salesResult"></p>
+        <div id="toggleBox" style="display:none;">This section is meant to be toggled !</div>
+    </div>
+    <div>
+        <!-- Question 3 -->
+         <h2>Display Numbers</h2>
+         <p>Click the button to display numbers from 1 to 5.</p>
+        <button onclick="showNumbers()">Show Numbers 1-5</button>
+        <ul id="numberList"></ul>
+    </div>
+    <div>
+        <h2>DOM Manipulation Demo</h2>
+        <p id="domText">This text will change!</p>
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="toggleBox()">Toggle Box</button>
+        <div id="domBox" style="display:none; background:#e0e0e0; padding:10px; margin-top:10px;">This box can be toggled.</div>
+        <button onclick="addItem()">Add List Item</button>
+        <ul id="domList"></ul>
+    </div>
+</body>
+</html>
+   <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

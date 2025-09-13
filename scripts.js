@@ -1,15 +1,21 @@
-// Second loop example: while loop to show numbers 6-10
-function showNumbersWhile() {
-    let list = document.getElementById("numberListWhile");
-    list.innerHTML = "";
-    let i = 6;
-    while (i <= 10) {
-        let li = document.createElement("li");
-        li.textContent = i;
-        list.appendChild(li);
-        i++;
+// Question 1
+// Basic JS to check voting eligibility based on age input
+// Using variables, conditionals, and event handling
+
+document.getElementById('votingAge').onclick = function() {
+    let yourName = document.getElementById('userName').value;
+    let yourAge = parseInt(document.getElementById('age').value);
+    document.getElementById('hd').textContent = 'Hello! My name is ' + yourName + ', and I am ' + yourAge + ' years old.';
+    if (yourAge >= 18) {
+        console.log('Yes, you can vote!');
+        document.getElementById('voteResult').textContent = 'Yes, you can vote!';
+    } else {
+        console.log('No, you cannot vote.');
+        document.getElementById('voteResult').textContent = 'No, you cannot vote.';
     }
-}
+};
+
+
 
 // Question 2
 // JS function practice for reusability and modularity
@@ -44,6 +50,19 @@ function showNumbers() {
         let li = document.createElement("li");
         li.textContent = i;
         list.appendChild(li);
+    }
+}
+
+// Second loop example: while loop to show numbers 6-10
+function showNumbersWhile() {
+    let list = document.getElementById("numberListWhile");
+    list.innerHTML = "";
+    let i = 6;
+    while (i <= 10) {
+        let li = document.createElement("li");
+        li.textContent = i;
+        list.appendChild(li);
+        i++;
     }
 }
 

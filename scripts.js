@@ -1,3 +1,15 @@
+// Second loop example: while loop to show numbers 6-10
+function showNumbersWhile() {
+    let list = document.getElementById("numberListWhile");
+    list.innerHTML = "";
+    let i = 6;
+    while (i <= 10) {
+        let li = document.createElement("li");
+        li.textContent = i;
+        list.appendChild(li);
+        i++;
+    }
+}
 
 // Question 2
 // JS function practice for reusability and modularity
